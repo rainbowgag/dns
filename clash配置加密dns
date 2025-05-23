@@ -27,7 +27,7 @@ proxy-groups:
     type: select
     proxies:   # 这里写你的节点名字
      # - 节点名称
-     # - socks5节点
+     - DIRECT
 
 rules:
   - MATCH,Proxy      # 所有流量都走代理
@@ -41,7 +41,7 @@ dns:
     - 223.5.5.5            
     - 114.114.114.114 
   nameserver:
-    - https://ds.youyo666.win/dns-query   
+    - https://dns.yuanmo.us/dns-query   
   fallback:
    - https://dns.alidns.com/dns-query
    - https://doh.pub/dns-query
